@@ -1,5 +1,9 @@
 # vue-d2b
 
+![vue](./static/logo-vue.png =x100)
+![d2b](./static/logo-vue.d2b =x100)
+
+
 > Vue components for d2b charts.
 
 Check out the example [here](https://d2bjs.github.io/vue-d2b/).
@@ -84,7 +88,7 @@ The other chart types are rendered in the same way, except they use their own re
 
 <template>
   <div class = 'chart'>
-    <sankey-pie :data = 'chartData' :config = 'chartConfig'></sankey-pie>
+    <chart-sankey :data = 'chartData' :config = 'chartConfig'></chart-sankey>
   </div>
 </template>
 
