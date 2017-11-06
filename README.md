@@ -6,7 +6,7 @@
 
 Check out the example [here](https://d2bjs.github.io/vue-d2b/).
 
-Visit [d2bjs.org](d2bjs.org) for more examples and detailed d2b guides.
+Visit [d2bjs.org](http://d2bjs.org) for more examples and detailed d2b guides.
 
 ## Dependencies
 
