@@ -2,8 +2,9 @@
 
 > Vue components for d2b charts.
 
-![vue](./static/logo-vue.png =x100)
-![d2b](https://raw.githubusercontent.com/d2bjs/vue-d2b/master/static/logo-d2b.png =x100)
+<img src="./static/logo-vue.png" height="100"/>
+<!-- ![vue](./static/logo-vue.png =x100)
+![d2b](https://raw.githubusercontent.com/d2bjs/vue-d2b/master/static/logo-d2b.png =x100) -->
 
 Check out the example [here](https://d2bjs.github.io/vue-d2b/).
 
