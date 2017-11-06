@@ -2,8 +2,8 @@
 
 > Vue components for d2b charts.
 
-<img src="./static/logo-vue.png" height="100"/>
-<img src="./static/logo-d2b.png" height="100"/>
+<img style="display:inline-block;" src="./static/logo-vue.png" height="100"/>
+<img style="display:inline-block;" src="./static/logo-d2b.png" height="100"/>
 
 Check out the example [here](https://d2bjs.github.io/vue-d2b/).
 
