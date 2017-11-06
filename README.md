@@ -16,7 +16,15 @@ Additionally, many charts in **d2b** make use of certain **font-awesome** icons 
 
 ## Install & Basic Usage
 
-d2b-vue adds vue convenience components for all of the d2b chart generators. Currently supported chart components:
+Add vue-d2b with npm or yarn.
+
+`npm install vue-d2b --save`
+
+or
+
+`yarn add vue-d2b`
+
+vue-d2b adds vue convenience components for all of the d2b chart generators. Currently supported chart components:
 
 - `ChartAxis`: An axis chart generator, with options for various types of cartesian e.g. line, bar, area.
 - `ChartPie`: A pie or donut chart.
