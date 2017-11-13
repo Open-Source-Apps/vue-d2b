@@ -5,8 +5,7 @@ export default {
   mixins: [generatorMixin],
   props: {
     generator: {
-      type: Function,
-      default: chartSunburst()
+      default: () => chartSunburst()
     }
   },
   data () {

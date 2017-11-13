@@ -5,8 +5,7 @@ export default {
   mixins: [generatorMixin],
   props: {
     generator: {
-      type: Function,
-      default: chartAxis()
+      default: () => chartAxis()
     }
   },
   data () {
