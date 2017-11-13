@@ -1,4 +1,5 @@
 import * as d3 from 'd3'
+import { id } from 'd2b'
 
 export default {
   template: `
@@ -11,7 +12,8 @@ export default {
   },
   data () {
     return {
-      unwatch: null
+      unwatch: null,
+      id: id()
     }
   },
   computed: {
