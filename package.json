@@ -18,7 +18,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "d2b": "^0.0.35"
+    "d2b": "^0.0.36"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
