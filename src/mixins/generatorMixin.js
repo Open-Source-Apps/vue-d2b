@@ -1,4 +1,4 @@
-import * as d3 from 'd3'
+import { select, selectAll } from 'd3'
 import { id } from 'd2b'
 
 export default {
@@ -26,34 +26,30 @@ export default {
     }
   },
   destroyed () {
-    d3.selectAll('.d2b-tooltip').remove()
-    d3.select(window).on(`resize.${this.id}`, null)
+    selectAll('.d2b-tooltip').remove()
+    select(window).on(`resize.${this.id}`, null)
   },
   mounted () {
     this.updateDefer()
-
-    d3.select(window).on(`resize.${this.id}`, this.updateDefer)
-
-    this.watcher()
+    select(window).on(`resize.${this.id}`, this.updateDefer)
   },
   methods: {
+    unwatcher () {
+      if (this.unwatch) this.unwatch()
+    },
     watcher () {
-      const handler = function () {
-        if (this.unwatch) this.unwatch()
-        this.update()
-        this.watcher()
-      }
-
-      this.unwatch = this.$watch('properties', handler, {deep: true})
+      this.unwatcher()
+      this.unwatch = this.$watch('properties', this.update, {deep: true})
     },
     update (options = {}) {
+      this.unwatcher()
       this.$emit('beforeRender', this.$el, this.generator)
 
       const data = this.data
 
       this.config(this.generator)
 
-      const el = d3.select(this.$el)
+      const el = select(this.$el)
       const elTransition = options.skipTransition ? el : el.transition().duration(this.duration)
 
       el.datum(data)
@@ -61,6 +57,7 @@ export default {
       elTransition.call(this.generator)
 
       this.$emit('rendered', this.$el, this.generator)
+      this.watcher()
     },
     updateNow () {
       this.update({skipTransition: true})
