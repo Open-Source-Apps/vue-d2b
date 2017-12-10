@@ -81,7 +81,7 @@ vue-d2b adds vue convenience components for all of the d2b chart generators. Cur
     The chart dimensions is bound by the outer container in this case '.chart'.
   */
   .chart{
-    height: 100vw;
+    height: 100%;
     max-height: 500px;
     margin-top: 40px;
   }
