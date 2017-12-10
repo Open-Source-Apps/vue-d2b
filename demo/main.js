@@ -8,6 +8,7 @@ import DemoPie from './DemoPie'
 import DemoSankey from './DemoSankey'
 import DemoSunburst from './DemoSunburst'
 import DemoGenerator from './DemoGenerator'
+import Prism from 'prismjs'
 
 import './styles.css'
 
@@ -23,6 +24,12 @@ const router = new VueRouter({
     { name: 'sunburst', path: '/sunburst', component: DemoSunburst },
     { name: 'generator', path: '/generator', component: DemoGenerator }
   ]
+})
+
+Vue.mixin({
+  mounted () {
+    Prism.highlightAll()
+  }
 })
 
 /* eslint-disable no-new */

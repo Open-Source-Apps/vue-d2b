@@ -27,7 +27,7 @@
 
 <style>
   #demo {
-    padding: 100px 0px;
+    margin-top: 40px;
   }
 
   h1,
@@ -52,10 +52,6 @@
   }
 
   @media only screen and (max-width : 750px) {
-    #demo {
-      padding: 100px 0px;
-    }
-
     img {
       height: 90px;
     }
