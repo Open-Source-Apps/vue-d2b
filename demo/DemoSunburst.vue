@@ -80,7 +80,7 @@
   }
 &lt;/script&gt;
 
-&lt;style scoped&gt;
+&lt;style&gt;
   .chart{
     width: 100%;
     height: 500px;

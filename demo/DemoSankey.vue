@@ -7,7 +7,7 @@
     <pre class="language-html"><code>
 &lt;template&gt;
   &lt;div class='chart'&gt;
-    &lt;chart-sankey :data='chartData'&gt;&lt;/chart-sankey&gt;
+    &lt;chart-sankey :data='chartData' :config='chartConfig'&gt;&lt;/chart-sankey&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 

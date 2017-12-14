@@ -81,9 +81,7 @@ vue-d2b adds vue convenience components for all of the d2b chart generators. Cur
     The chart dimensions is bound by the outer container in this case '.chart'.
   */
   .chart{
-    height: 100%;
-    max-height: 500px;
-    margin-top: 40px;
+    height: 500px;
   }
 </style>
 ```
@@ -106,7 +104,24 @@ The other chart types are rendered in the same way, except they use their own re
       return {
         // The chart data varies from chart to chart. To see what type of data
         // to provide each chart type head over to the d2bjs.org docs.
-        chartData: { /* ... */ },
+        chartData: {
+          nodes: [
+            {name: 'Node A'},
+            {name: 'Node B'},
+            {name: 'Node C'},
+            {name: 'Node D'},
+            {name: 'Node E'}
+          ],
+          links: [
+            {source: 'Node A', target: 'Node E', value: 2},
+            {source: 'Node A', target: 'Node C', value: 2},
+            {source: 'Node B', target: 'Node C', value: 2},
+            {source: 'Node B', target: 'Node D', value: 2},
+            {source: 'Node C', target: 'Node D', value: 2},
+            {source: 'Node C', target: 'Node E', value: 2},
+            {source: 'Node D', target: 'Node E', value: 4}
+          ]
+        },
 
         // There are many configuration options for each chart type, checkout
         // the d2bjs.org docs for more information.

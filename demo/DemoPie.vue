@@ -11,7 +11,7 @@
   &lt;div class='chart'&gt;
     &lt;!-- import font awesome for legend icons --&gt;
     &lt;link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'&gt;
-    &lt;chart-pie :data='chartData'&gt;&lt;/chart-pie&gt;
+    &lt;chart-pie :data='chartData' :config='chartConfig'&gt;&lt;/chart-pie&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
