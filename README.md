@@ -38,7 +38,7 @@ vue-d2b adds vue convenience components for all of the d2b chart generators. Cur
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!--
-      Both the :data and :chart properties are deeply reactive so any changes
+      Both the :data and :config properties are deeply reactive so any changes
       to these will cause the chart to update.
     -->
     <chart-pie :data = 'chartData' :config = 'chartConfig'></chart-pie>
