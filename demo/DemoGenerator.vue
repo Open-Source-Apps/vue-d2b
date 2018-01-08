@@ -56,12 +56,14 @@
     data () {
       return {
         legendGenerator: legend(),
+
         legendData: [
           { html: 'Lemon' },
           { html: 'Lime' },
           { html: 'Grapefruit' },
           { html: 'Orange' }
         ],
+
         legendConfig (legend) {
           legend
             .clickable(true)
