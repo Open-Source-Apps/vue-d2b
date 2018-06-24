@@ -18,7 +18,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "d2b": "^0.5.0",
+    "d2b": "^0.5.2",
     "prismjs": "^1.9.0"
   },
   "devDependencies": {
