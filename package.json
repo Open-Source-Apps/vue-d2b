@@ -1,6 +1,6 @@
 {
   "name": "vue-d2b",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Vue components for d2b charts.",
   "author": "Kevin Warne <kjw988@gmail.com>",
   "jsnext:main": "src/index.js",
