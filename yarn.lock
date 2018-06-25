@@ -1675,9 +1675,9 @@ custom-event@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.1.tgz#5d02a46850adf1b4a317946a3928fccb5bfd0425"
 
-d2b@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/d2b/-/d2b-0.5.2.tgz#652c658b426150af0b5aacdc47742d5b7f94caa0"
+d2b@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/d2b/-/d2b-0.5.3.tgz#c61653652efd9d41a7f8e2d80e609a2bbe35ef9f"
   dependencies:
     d3 "^4.5.0"
     d3-interpolate-path "^2.0.1"
